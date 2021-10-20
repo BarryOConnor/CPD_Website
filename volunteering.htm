@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+ <!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### PRE-Processing of CSS ###
+CSS on this site was generated from a SASS (ScSS) preprocessor which I can 
+supply if needed. I haven't done so since it's outside the scope of the 
+assignment marking system. I would normally remove unneeded CSS as part of 
+the build process and compress for speed but since this is being marked, I've 
+left it verbose.
+
+### ACKNOWLEDGEMENTS ###
+
+This site uses fontawesome (https://fontawesome.com) for icons
+This Site uses PhotoSwipe (https://photoswipe.com) for the image gallery
+
+     ####################################################################### -->   
+    <title>Volunteering :: Continuing Professional Development</title>
+    <meta name="description" content="Volunteering page for Barry O'Connor's Continuing Professional Development website">
+    <meta name="keywords" content="Volunteering, Clifton Food Bank, Continuing Professional Development, Undergraduate, Web Developer, Nottingham Trent University, Year One, Essential Skills assessment">
+    <meta name="author" content="Barry O'Connor">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+    <!-- Core PhotoSwipe CSS file -->
+    <link rel="stylesheet" href="css/photoswipe.css"> 
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<div id="bodywrapper">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <!-- ############################# Header ############################# -->
+    <header>
+        <!-- main site navigation block -->
+        <nav id="main-menu">
+            <div class="boc-simple-menu">
+                <a class="boc-menu-button boc-hide-tab-up" href="javascript:void(0);" onclick="myFunction()" onfocus="" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+                <a href="index.htm" class="boc-hide-phone"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-phone active"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-phone"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-phone"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-phone"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-phone"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-phone"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="dropdown-nav" class="boc-hide boc-hide-tab-up">
+                <a href="index.htm" class="boc-hide-tab-up"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-tab-up active"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-tab-up"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-tab-up"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-tab-up"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-tab-up"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-tab-up"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+        </nav>
+
+        <div id="hero">
+            <div> <!-- wrapper to overlay the dark filter over the image -->
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <h1>I am Barry O'Connor<span class="p">And this is my Professional Development Journey</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################# CONTENT ############################# -->
+    <main id="main-content">
+
+        <header id="header-explain" class="breadcrumbed">
+            <div id="header-breadcrumb">
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <ul class="boc-grid-container">
+                                <li><a href="index.htm" title="return to the site homepage"><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</a></li>
+                                <li>Volunteering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-12-col-tab">
+                        <h2>Volunteering</h2>
+                        <p>The Clifton NG11 Food offers help for people living in the Clifton area of Nottingham. Run by the Trussell Trust, who operate a network of over 420 foodbanks, which work out of more than 1,200 centres across the UK and provide emergency food to people referred for support.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Volunteering Grid -->
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Clifton NG11 Food Bank</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4> Media Gallery</h4>
+                        
+
+                        
+
+                    <div id="image-gallery" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/volunteering/dating_food.jpg" data-size="1000x1000" data-med="images/volunteering/dating_food_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/volunteering/dating_food_t.jpg" alt="Piles of food waiting on a table for the volunteers to check use by dates before it gets sent to the warehouse">
+                          <figure>Piles of food waiting on a table for the volunteers to check use by dates before it gets sent to the warehouse</figure>
+                        </a>
+
+                        <a href="images/volunteering/food_table.jpg" data-size="1000x1000" data-med="images/volunteering/food_table_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/volunteering/food_table_t.jpg" alt="Fresh foods or baked goods which will go out of date quickly are displayed on a table for people to take.">
+                          <figure>Fresh foods or baked goods which will go out of date quickly are displayed on a table for people to take.</figure>
+                        </a>
+
+                        <a href="images/volunteering/food_trolley.jpg" data-size="1000x1000" data-med="images/volunteering/food_trolley_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/volunteering/food_trolley_t.jpg" alt="Wheeling a trolley full of donations from the dropoff point at the nearby Hope Cafe to be processed at the food bank.">
+                          <figure>Wheeling a trolley full of donations from the dropoff point at the nearby Hope Cafe to be processed at the food bank.</figure>
+                        </a>
+
+                        <a href="images/volunteering/warehouse.jpg" data-size="1000x1000" data-med="images/volunteering/warehouse_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/volunteering/warehouse_t.jpg" alt="One of two wearehouses at the food bank. The shelves around the edges are piled with tins, boxes of cereal and various food.">
+                          <figure>One of two wearehouses at the food bank. The shelves around the edges are piled with tins, boxes of cereal and various food.</figure>
+                        </a>
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+
+
+   
+
+                    <h4>What did I do?</h4>
+                    <p>I volunteered for the first time in my life at the Clifton NG11 Food Bank. The food bank were advertising for volunteers to help with data entry, labelling and weighing food and highlighted that some lifting of food parcels would be required. I felt that my love of food, computer skills and physical strength from the gym would make me a good match so I volunteered.</p>
+                    <h4>When did this take place?</h4>
+                    <p>I Have volunteered for 3 hours every Saturday morning since the 20th October 2018.<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>This was something close to my heart and something I felt I could make a difference in doing. Food is something I spend a lot of time preparing, since nutrition is vital for any gym work. As a student, I'm very used to being on a tight budget and so I understand the difficulties of feeding many people on a budget. This was initially only advertised on a Tuesday morning, so I contacted the Student's Union and after some emailing back and forward to arrange, I offered to go along and help out.</p>
+                    <p>This has been an opportunity to go out into the local community and use my skills (and strong back!) to help. It's been an opportunity to use my skills in communicating with others, working as part of a team and using some of the under-calued skills such as the ability to listen to others with empathy and understanding.</p>
+                    <p>The team at the food bank have been great and very supportive. They have been really welcoming and interested in my story and in sharing theirs. They have invited me along to the many other events they run such as quizzes so it's been a great way to socialise a little too.</p>
+                    <p>The Student's Union asked me to do a video interview regarding my volunteering at the food bank. I spent some time with Mackenzie Orrick on the 7th November recording that interview.</p>
+                   
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+    <!-- ############################# FOOTER ############################# -->
+
+    <!-- about me section -->
+    <section id="boc-about">
+        <header>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-4-col-tab">
+                        <div class="boc-facepic">
+                            <img class="boc-img-circ" src="images/picture-of-my-face_phone.jpg" alt="image showing my face" />
+                        </div>
+                    </div>
+                    <div class="boc-8-col-tab">
+                        <h2>About me</h2>
+                        <p>My name is Barry O'Connor</p>
+                        <p>I'm a web developer, currently studying for a BSc Computer Science degree at Nottingham Trent University.</p>
+                        <p><a href="about.htm" class="boc-faded" title="Find out more about me on my about me page."><span class="arrow-right"></span>Find out more about me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <footer id="sitefooter">
+        <div class="boc-grid-row">
+            <div class="boc-12-col-tab">
+                <p>say hello and start a conversation.</p>
+                    <a href="https://www.facebook.com/barry.oconnor.3572" title="Visit my Facebook page (opens in a new window)" target="_blank"><span class="fab fa-facebook"></span></a><span class="boc-screenreader-only">Visit my facebook page (opens in a new window)</span>
+                    <span class="boc-spacer"></span>
+                    <a href="https://www.linkedin.com/in/barry-o-connor-157a9b174/" title="Visit my LinkedIn page (opens in a new window)" target="_blank"><span class="fab fa-linkedin"></span></a><span class="boc-screenreader-only">Visit my LinkedIn page (opens in a new window)</span>
+            </div>
+        </div>
+        <div>
+            &copy; Barry O'Connor 2018.<a href="help-sitemap.htm" class="right" title="view the help / sitemap page for this site">help / SiteMap</a>
+        </div>
+    </footer>
+</div>
+<!-- 
+End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var menuButton = document.getElementById("dropdown-nav");
+    if (menuButton.className.indexOf("boc-toggle") == -1) {
+        menuButton.className += " boc-toggle";
+    } else { 
+        menuButton.className = menuButton.className.replace(" boc-toggle", "");
+    }
+}   
+</script>
+<script src="js/image-gallery.js"></script>
+
+
+
+
+<!-- ##### Photoswipe CONTENT BEGIN#####-->
+<!-- Core JS file -->
+<script src="js/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="js/photoswipe-ui-default.min.js"></script> 
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader to active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ##### Photoswipe CONTENT END#####-->
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+<!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### PRE-Processing of CSS ###
+CSS on this site was generated from a SASS (ScSS) preprocessor which I can 
+supply if needed. I haven't done so since it's outside the scope of the 
+assignment marking system. I would normally remove unneeded CSS as part of 
+the build process and compress for speed but since this is being marked, I've 
+left it verbose.
+
+### ACKNOWLEDGEMENTS ###
+
+This site uses fontawesome (https://fontawesome.com) for icons
+This Site uses PhotoSwipe (https://photoswipe.com) for the image gallery
+
+     ####################################################################### -->
+
+    <title>Academic :: Continuing Professional Development</title>
+    <meta name="description" content="Academic page for Barry O'Connor's Continuing Professional Development website">
+    <meta name="keywords" content="Academic, NTU classes, Library, Continuing Professional Development, Undergraduate, Web Developer, Nottingham Trent University, Year One, Essential Skills assessment">
+    <meta name="author" content="Barry O'Connor">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+    <!-- Core PhotoSwipe CSS file -->
+    <link rel="stylesheet" href="css/photoswipe.css"> 
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<div id="bodywrapper">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <!-- ############################# Header ############################# -->
+    <header>
+        <!-- main site navigation block -->
+        <nav id="main-menu">
+            <div class="boc-simple-menu">
+                <a class="boc-menu-button boc-hide-tab-up" href="javascript:void(0);" onclick="myFunction()" onfocus="" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+                <a href="index.htm" class="boc-hide-phone"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-phone"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-phone"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-phone"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-phone active"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-phone"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-phone"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="dropdown-nav" class="boc-hide boc-hide-tab-up">
+                <a href="index.htm" class="boc-hide-tab-up"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-tab-up"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-tab-up"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-tab-up"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-tab-up active"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-tab-up"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-tab-up"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+        </nav>
+
+        <div id="hero">
+            <div> <!-- wrapper to overlay the dark filter over the image -->
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <h1>I am Barry O'Connor<span class="p">And this is my Professional Development Journey</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################# CONTENT ############################# -->
+    <main id="main-content">
+
+        <header id="header-explain" class="breadcrumbed">
+            <div id="header-breadcrumb">
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <ul class="boc-grid-container">
+                                <li><a href="index.htm" title="return to the site homepage"><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</a></li>
+                                <li>Academic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-12-col-tab">
+                        <h2>Academic</h2>
+                        <p>Nottingham Trent University offers many helpful classes and mentor sessions which run alongside the scheduled lectures.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+         <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Company Visit (MHR)</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4> Media Gallery</h4>
+                        
+
+                        
+
+                    <div id="image-gallery-mhr" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/academic/MHR_opening_presentation.jpg" data-size="1000x1000" data-med="images/academic/MHR_opening_presentation_m.jpg" data-med-size="500x500" data-author="Christopher Allan">
+                          <img src="images/academic/MHR_opening_presentation_t.jpg" alt="A picture of the opening slides for the MHR company visit"/>
+                          <figure>A picture of the opening slides for the MHR company visit.</figure>
+                        </a>
+
+                        <a href="images/academic/MHR_placement_students.jpg" data-size="1000x1000" data-med="images/academic/MHR_placement_students_m.jpg" data-med-size="500x500" data-author="Christopher Allan">
+                          <img src="images/academic/MHR_placement_students_t.jpg" alt="A picture of the opening slides for the placement student presentation at the MHR company visit."/>
+                          <figure>A picture of the opening slides for the placement student presentation at the MHR company visit.</figure>
+                        </a>
+
+                        <a href="images/academic/MHR_lego_activity.jpg" data-size="1000x1000" data-med="images/academic/MHR_lego_activity_m.jpg" data-med-size="500x500" data-author="Christopher Allan">
+                          <img src="images/academic/MHR_lego_activity_t.jpg" alt="The conclusion of the MHR visit - an afternoon learning how AGILE works using Lego!"/>
+                          <figure>The conclusion of the MHR visit - an afternoon learning how AGILE works using Lego!</figure>
+                        </a>
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+   
+
+                    <h4>What did I do?</h4>
+                    <p>I went to MHR for a company visit during Digital Horizons week</p>
+                    <h4>When did this take place?</h4>
+                    <p>The visit was on the 15th of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>The visit to MHR was great. We had a few talks which were interesting and finished with a great activity session using Lego bricks to show how Agile development cycles work. Was a good day, made a few networking contacts, learned some new things and had fun.</p>
+                    <h4>Related Links</h4>
+                    <p><a href="https://www.mhr.co.uk/" title="visit the MHR Website (Opens in a new Window)" target="_blank">MHR website</a></p>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Work in Tech for First Year Students</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4> Media Gallery</h4>
+                        
+
+                    <div id="image-gallery-presentation" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/academic/boots_presentation.jpg" data-size="1000x1000" data-med="images/academic/boots_presentation_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/academic/boots_presentation_t.jpg" alt="A picture of the opening slides for the Boots Presentation."/>
+                          <figure>A picture of the opening slides for the Boots Presentation.</figure>
+                        </a>
+
+                        <a href="images/academic/bloc_digital_presentation.jpg" data-size="1000x1000" data-med="images/academic/bloc_digital_presentation_m.jpg" data-med-size="500x500" data-author="Christopher Allan">
+                          <img src="images/academic/bloc_digital_presentation_t.jpg" alt="A lecture theater full of students watching the presentation given by Bloc Digital."/>
+                          <figure>A lecture theater full of students watching the presentation given by Bloc DIgital.</figure>
+                        </a>
+
+                        <a href="images/academic/holo_lens.jpg" data-size="1000x1000" data-med="images/academic/holo_lens_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/academic/holo_lens_t.jpg" alt="A picture of a student using the Microsoft Holo Lens at the Work in Tech presentation."/>
+                          <figure>A picture of a student using the Microsoft Holo Lens at the Work in Tech presentation.</figure>
+                        </a>
+
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+
+
+                    <h4>What did I do?</h4>
+                    <p>I attended the Work in Tech presentation during Digital Horizons week.</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 14th of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>The talk was a little basic but considering we are first years, that’s to be expected. I didn’t learn much that I didn’t know but it was a great opportunity to chat to the employers a little in terms of networking and finding out whether they could be potential employers in future.</p>
+                    <h4>Related Links</h4>
+                    <p><a href="https://www.bloc-digital.com/" title="visit the Bloc Digital Website (Opens in a new Window)" target="_blank">Bloc DIgital website</a> | <a href="https://www.boots.com/" title="visit the boots Website (Opens in a new Window)" target="_blank">Boots website</a></p>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Library Courses</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4>Related Media</h4>
+                    <a href="downloads/structuring_an_essay.pptx" title="powerpoint presentation given during this lecture regarding structuring an essay (opens in a new window)" target="_blank">Structuring an essay (powerpoint)</a>
+                    <h4>What did I do?</h4>
+                    <p>I attended a library course on Academic Writing, called Structuring an Essay</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 14th of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>I attended this course to help with my Academic Writing. The course was run by Angela Donaldson. Coming from a Web background, I'm not used to writing in this style and was struggling a little. This course was really helpful and I learned a lot about paraphrasing and essay layout. The slides were made available afterward which was really useful.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Library Learning Team</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4>Related Media</h4>
+                    <a href="downloads/BarryOConnor-N0813926-Report.pdf" title="the final bversion of the report the library staff helped me with (opens in a new window)" target="_blank">Serious Games and VR report</a>
+                    <h4>What did I do?</h4>
+                    <p>I attended three Library Learning Team appointments</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 12th, 20th and 27th of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>I booked and attended a few appointments to get help with the report assignment for Essential Skills. I booked with Angela Donaldson mainly since i had spent time with her on the course and felt familiar. These sessions have been great because I was able to ask for specific help with areas I was struggling with and was given lots of additional advice on how to approach the task. This helped enormously with the report writing and I eventually managed to hand in something I was really happy with.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">CERT Mentor Sessions</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4>What did I do?</h4>
+                    <p>I attended four CERT Mentor sessions</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 8th, 15th, 22nd and 29th of October<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>These are a great opportunity to get information regarding tests and general tips. I feel that, in general, I don’t have a huge amount of questions that need answering so the usefulness is somewhat limited. However they have been extremely useful on occasion, especially regarding information on testing procedures from the mentor who has obviously been through them before.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Clifton Placement and Graduate Jobs Fair</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4>What did I do?</h4>
+                    <p>I attended the palcement and graduate jobs fair</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 8th of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>I went for a brief walk around with some of the DevSoc guys. Wasn’t a lot there for me personally although I did chat for a little bit with some of the web companies to get a feel for what they were doing and what the job market was like. I spoke to the lady from MHL who I met again at the interview practice session during Digital Horizons week.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Mock Interviews</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4>What did I do?</h4>
+                    <p>I attended the Mock Interviews during Digital Horizons week.</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 14thh of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>I met with the interviewer (who turned out to be the lady from MMT Digital that I’d spoken to at the job fair) so it was a nice ice breaker to begin with. Was a good interview and I did really well but there were a couple of suggestions which would have made my answers more rounded or fuller so this was really useful.</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- ############################# FOOTER ############################# -->
+
+    <!-- about me section -->
+    <section id="boc-about">
+        <header>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-4-col-tab">
+                        <div class="boc-facepic">
+                            <img class="boc-img-circ" src="images/picture-of-my-face_phone.jpg" alt="image showing my face" />
+                        </div>
+                    </div>
+                    <div class="boc-8-col-tab">
+                        <h2>About me</h2>
+                        <p>My name is Barry O'Connor</p>
+                        <p>I'm a web developer, currently studying for a BSc Computer Science degree at Nottingham Trent University.</p>
+                        <p><a href="about.htm" class="boc-faded" title="Find out more about me on my about me page."><span class="arrow-right"></span>Find out more about me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <footer id="sitefooter">
+        <div class="boc-grid-row">
+            <div class="boc-12-col-tab">
+                <p>say hello and start a conversation.</p>
+                    <a href="https://www.facebook.com/barry.oconnor.3572" title="Visit my Facebook page (opens in a new window)"><span class="fab fa-facebook"></span></a><span class="boc-screenreader-only">Visit my facebook page (opens in a new window)</span>
+                    <span class="boc-spacer"></span>
+                    <a href="https://www.linkedin.com/in/barry-o-connor-157a9b174/" title="Visit my LinkedIn page (opens in a new window)"><span class="fab fa-linkedin"></span></a><span class="boc-screenreader-only">Visit my LinkedIn page (opens in a new window)</span>
+            </div>
+        </div>
+        <div>
+            &copy; Barry O'Connor 2018.<a href="help-sitemap.htm" class="right" title="view the help / sitemap page for this site">help / SiteMap</a>
+        </div>
+    </footer>
+</div>
+<!-- 
+End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var menuButton = document.getElementById("dropdown-nav");
+    if (menuButton.className.indexOf("boc-toggle") == -1) {
+        menuButton.className += " boc-toggle";
+    } else { 
+        menuButton.className = menuButton.className.replace(" boc-toggle", "");
+    }
+}   
+</script>
+<script src="js/image-gallery.js"></script>
+
+
+
+
+<!-- ##### Photoswipe CONTENT BEGIN#####-->
+<!-- Core JS file -->
+<script src="js/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="js/photoswipe-ui-default.min.js"></script> 
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader to active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ##### Photoswipe CONTENT END#####-->
+</body>
+</html>

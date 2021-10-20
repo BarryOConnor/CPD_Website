@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+<!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### PRE-Processing of CSS ###
+CSS on this site was generated from a SASS (ScSS) preprocessor which I can 
+supply if needed. I haven't done so since it's outside the scope of the 
+assignment marking system. I would normally remove unneeded CSS as part of 
+the build process and compress for speed but since this is being marked, I've 
+left it verbose.
+
+### ACKNOWLEDGEMENTS ###
+
+This site uses fontawesome (https://fontawesome.com) for icons
+This Site uses PhotoSwipe (https://photoswipe.com) for the image gallery
+
+     ####################################################################### -->
+
+    <title>Societies :: Continuing Professional Development</title>
+    <meta name="description" content="Societies page for Barry O'Connor's Continuing Professional Development website">
+    <meta name="keywords" content="Societies, DevSoc, Continuing Professional Development, Undergraduate, Web Developer, Nottingham Trent University, Year One, Essential Skills assessment">
+    <meta name="author" content="Barry O'Connor">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+    <!-- Core PhotoSwipe CSS file -->
+    <link rel="stylesheet" href="css/photoswipe.css"> 
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<div id="bodywrapper">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <!-- ############################# Header ############################# -->
+    <header>
+        <!-- main site navigation block -->
+        <nav id="main-menu">
+            <div class="boc-simple-menu">
+                <a class="boc-menu-button boc-hide-tab-up" href="javascript:void(0);" onclick="myFunction()" onfocus="" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+                <a href="index.htm" class="boc-hide-phone"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-phone"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-phone active"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-phone"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-phone"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-phone"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-phone"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="dropdown-nav" class="boc-hide boc-hide-tab-up">
+                <a href="index.htm" class="boc-hide-tab-up"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-tab-up"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-tab-up active"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-tab-up"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-tab-up"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-tab-up"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-tab-up"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+        </nav>
+
+        <div id="hero">
+            <div> <!-- wrapper to overlay the dark filter over the image -->
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <h1>I am Barry O'Connor<span class="p">And this is my Professional Development Journey</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################# CONTENT ############################# -->
+    <main id="main-content">
+
+        <header id="header-explain" class="breadcrumbed">
+            <div id="header-breadcrumb">
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <ul class="boc-grid-container">
+                                <li><a href="index.htm" title="return to the site homepage"><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</a></li>
+                                <li>Societies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-12-col-tab">
+                        <h2>Societies</h2>
+                        <p>Nottingham Trent University has over 100 student societies for everything from Accounting to Burlesque. They are student run and open to everyone, making them a great place to meet people who share the same interestes as you.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Volunteering Grid -->
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">DevSoc - Developer Society</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4> Media Gallery</h4>
+                        
+
+                        
+
+                    <div id="image-gallery" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/societies/polyjuice_potion.jpg" data-size="1000x1000" data-med="images/societies/polyjuice_potion_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/societies/polyjuice_potion_t.jpg" alt="This drink is a real life approximation of a Polyjuice Potion from the Harry Potter world"/>
+                          <figure>This drink is a real life approximation of a Polyjuice Potion from the Harry Potter world.</figure>
+                        </a>
+
+                        <a href="images/societies/alt_lounge_artwork.jpg" data-size="1000x1000" data-med="images/societies/alt_lounge_artwork_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/societies/alt_lounge_artwork_t.jpg" alt="The [Alt] Gaming lounge decor includes games characters including Sonic The Hedgehog"/>
+                          <figure>The [Alt] Gaming lounge decor includes games characters including Sonic The Hedgehog.</figure>
+                        </a>
+
+                        <a href="images/societies/catherine_flick.jpg" data-size="1000x1000" data-med="images/societies/catherine_flick_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/societies/catherine_flick_t.jpg" alt="Catherine Flick delivering her lecture on ethics in computing at the Women in Tech event."/>
+                          <figure>Catherine Flick delivering her lecture on ethics in computing at the Women in Tech event.</figure>
+                        </a>
+
+                        <a href="images/societies/diversity_statistics.jpg" data-size="1000x1000" data-med="images/societies/diversity_statistics_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/societies/diversity_statistics_t.jpg" alt="A slide from the ethics talk showing the appalling diversity statistics in the technology industry."/>
+                          <figure>A slide from the ethics talk showing the appalling diversity statistics in the technology industry.</figure>
+                        </a>
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+   
+
+                    <h4>What did I do?</h4>
+                    <p>I joined the DevSoc society to explore opportunities in tech, to meet similar minded people and to attend the various tech-related talks and meetups in Nottingham to gain a better understanding of the job market here.</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended a social on the 17th October at [ALT] Gaming Lounge, a Python presentation on the 18th October and I attended a Women in Tech talk on the 1st November.<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>I was honestly a little dubious about joining DevSOc. I've been coding for a long time and I stopped coding for fun a long time ago, so initially I joined the society on a social level as I didn't want to be involved in side projects or coding competitions. The members tend to be of the same geeky nature I am so it has become a bit of a home from home and I am regularly active on the Discord chat.</p>
+                    <p>It has to be said that the DevSoc members are incredibly clued up about events, bursaries and opportunities. Some of the information being passed around is regarding opportunities and is really extremely useful.</p>
+                    <p>The networking events (women in Tech) were tough as I struggle a little with networking, however I'm better at it than most of the others in the group so I was able to act as a middle man at meetings which I actually enjoyed.</p>
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+    <!-- ############################# FOOTER ############################# -->
+
+    <!-- about me section -->
+    <section id="boc-about">
+        <header>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-4-col-tab">
+                        <div class="boc-facepic">
+                            <img class="boc-img-circ" src="images/picture-of-my-face_phone.jpg" alt="image showing my face" />
+                        </div>
+                    </div>
+                    <div class="boc-8-col-tab">
+                        <h2>About me</h2>
+                        <p>My name is Barry O'Connor</p>
+                        <p>I'm a web developer, currently studying for a BSc Computer Science degree at Nottingham Trent University.</p>
+                        <p><a href="about.htm" class="boc-faded" title="Find out more about me on my about me page."><span class="arrow-right"></span>Find out more about me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <footer id="sitefooter">
+        <div class="boc-grid-row">
+            <div class="boc-12-col-tab">
+                <p>say hello and start a conversation.</p>
+                    <a href="https://www.facebook.com/barry.oconnor.3572" title="Visit my Facebook page (opens in a new window)" target="_blank"><span class="fab fa-facebook"></span></a><span class="boc-screenreader-only">Visit my facebook page (opens in a new window)</span>
+                    <span class="boc-spacer"></span>
+                    <a href="https://www.linkedin.com/in/barry-o-connor-157a9b174/" title="Visit my LinkedIn page (opens in a new window)" target="_blank"><span class="fab fa-linkedin"></span></a><span class="boc-screenreader-only">Visit my LinkedIn page (opens in a new window)</span>
+            </div>
+        </div>
+        <div>
+            &copy; Barry O'Connor 2018.<a href="help-sitemap.htm" class="right" title="view the help / sitemap page for this site">help / SiteMap</a>
+        </div>
+    </footer>
+</div>
+<!-- 
+End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var menuButton = document.getElementById("dropdown-nav");
+    if (menuButton.className.indexOf("boc-toggle") == -1) {
+        menuButton.className += " boc-toggle";
+    } else { 
+        menuButton.className = menuButton.className.replace(" boc-toggle", "");
+    }
+}   
+</script>
+<script src="js/image-gallery.js"></script>
+
+
+
+
+<!-- ##### Photoswipe CONTENT BEGIN#####-->
+<!-- Core JS file -->
+<script src="js/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="js/photoswipe-ui-default.min.js"></script> 
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader to active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ##### Photoswipe CONTENT END#####-->
+</body>
+</html>

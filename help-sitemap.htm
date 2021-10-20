@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+<!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### PRE-Processing of CSS ###
+CSS on this site was generated from a SASS (ScSS) preprocessor which I can 
+supply if needed. I haven't done so since it's outside the scope of the 
+assignment marking system. I would normally remove unneeded CSS as part of 
+the build process and compress for speed but since this is being marked, I've 
+left it verbose.
+
+### ACKNOWLEDGEMENTS ###
+
+This site uses fontawesome (https://fontawesome.com) for icons
+This Site uses PhotoSwipe (https://photoswipe.com) for the image gallery
+
+     ####################################################################### -->
+
+    <title>Help / Sitemap :: Continuing Professional Development</title>
+    <meta name="description" content="Help and Sitemap for Barry O'Connor's Continuing Professional Development website">
+    <meta name="keywords" content="Continuing Professional Development, Undergraduate, Web Developer, Nottingham Trent University, Year One, Essential Skills assessment">
+    <meta name="author" content="Barry O'Connor">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<div id="bodywrapper">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <!-- ############################# Header ############################# -->
+    <header>
+        <!-- main site navigation block -->
+        <nav id="main-menu">
+            <div class="boc-simple-menu">
+                <a class="boc-menu-button boc-hide-tab-up" href="javascript:void(0);" onclick="myFunction()" onfocus="" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+                <a href="index.htm" class="boc-hide-phone active"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-phone"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-phone"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-phone"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-phone"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-phone"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-phone"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="dropdown-nav" class="boc-hide boc-hide-tab-up">
+                <a href="index.htm" class="boc-hide-tab-up active"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-tab-up"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-tab-up"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-tab-up"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-tab-up"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-tab-up"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-tab-up"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+        </nav>
+
+        <div id="hero">
+            <div> <!-- wrapper to overlay the dark filter over the image -->
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <h1>I am Barry O'Connor<span class="p">And this is my Professional Development Journey</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################# CONTENT ############################# -->
+    <main id="main-content">
+
+        <header id="header-explain" class="breadcrumbed">
+            <div id="header-breadcrumb">
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <ul class="boc-grid-container">
+                                <li><a href="index.htm" title="return to the site homepage"><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</a></li>
+                                <li>SiteMap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-12-col-tab">
+                        <h2>Help / SiteMap</h2>
+                        <p>Use the site map to find your way around this site. Learn about me and the various <abbr title="Continuing Professional Development">CPD</abbr> activities I engaged in.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Volunteering Grid -->
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Sitemap</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <ul>
+                        <li><a href="index.htm" title="visit the site homepage">Home</a>
+                        <ul>
+                            <li><a href="volunteering.htm" title="Find out more about my volunteering activities">Volunteering</a></li>
+                            <li><a href="societies.htm" title="Find out more about my involvement with societies">Societies</a></li>
+                            <li><a href="sport.htm" title="Find out more about my sports participation">Sport</a></li>
+                            <li><a href="academic.htm" title="Find out more about academic courses I took">Academic</a></li>
+                            <li><a href="events.htm" title="Find out more about events I attended">Events</a></li>
+                            <li><a href="about.htm" title="Find out more about me personally">About</a></li>
+                            <li><a href="help-sitemap.htm" title="The help and sitemap page on this site. You are currently on this page.">site map / help</a></li>
+                        </ul></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+    <!-- ############################# FOOTER ############################# -->
+
+    <!-- about me section -->
+    <section id="boc-about">
+        <header>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-4-col-tab">
+                        <div class="boc-facepic">
+                            <img class="boc-img-circ" src="images/picture-of-my-face_phone.jpg" alt="image showing my face" />
+                        </div>
+                    </div>
+                    <div class="boc-8-col-tab">
+                        <h2>About me</h2>
+                        <p>My name is Barry O'Connor</p>
+                        <p>I'm a web developer, currently studying for a BSc Computer Science degree at Nottingham Trent University.</p>
+                        <p><a href="about.htm" class="boc-faded" title="Find out more about me on my about me page."><span class="arrow-right"></span>Find out more about me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <footer id="sitefooter">
+        <div class="boc-grid-row">
+            <div class="boc-12-col-tab">
+                <p>say hello and start a conversation.</p>
+                    <a href="https://www.facebook.com/barry.oconnor.3572" title="Visit my Facebook page (opens in a new window)" target="_blank"><span class="fab fa-facebook"></span></a><span class="boc-screenreader-only">Visit my facebook page (opens in a new window)</span>
+                    <span class="boc-spacer"></span>
+                    <a href="https://www.linkedin.com/in/barry-o-connor-157a9b174/" title="Visit my LinkedIn page (opens in a new window)" target="_blank"><span class="fab fa-linkedin"></span></a><span class="boc-screenreader-only">Visit my LinkedIn page (opens in a new window)</span>
+            </div>
+        </div>
+        <div>
+            &copy; Barry O'Connor 2018.<a href="help-sitemap.htm" class="right" title="view the help / sitemap page for this site">help / SiteMap</a>
+        </div>
+    </footer>
+
+</div>
+
+<!-- 
+End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var menuButton = document.getElementById("dropdown-nav");
+    if (menuButton.className.indexOf("boc-toggle") == -1) {
+        menuButton.className += " boc-toggle";
+    } else { 
+        menuButton.className = menuButton.className.replace(" boc-toggle", "");
+    }
+}
+</script>
+</body>
+</html>

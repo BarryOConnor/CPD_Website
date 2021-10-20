@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+<!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### PRE-Processing of CSS ###
+CSS on this site was generated from a SASS (ScSS) preprocessor which I can 
+supply if needed. I haven't done so since it's outside the scope of the 
+assignment marking system. I would normally remove unneeded CSS as part of 
+the build process and compress for speed but since this is being marked, I've 
+left it verbose.
+
+### ACKNOWLEDGEMENTS ###
+
+This site uses fontawesome (https://fontawesome.com) for icons
+This Site uses PhotoSwipe (https://photoswipe.com) for the image gallery
+
+     ####################################################################### -->
+
+    <title>Events :: Continuing Professional Development</title>
+    <meta name="description" content="Events page for Barry O'Connor's Continuing Professional Development website">
+    <meta name="keywords" content="Events, LGBT Leaders, Global Lounge, Grit, Continuing Professional Development, Undergraduate, Web Developer, Nottingham Trent University, Year One, Essential Skills assessment">
+    <meta name="author" content="Barry O'Connor">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+    <!-- Core PhotoSwipe CSS file -->
+    <link rel="stylesheet" href="css/photoswipe.css"> 
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<div id="bodywrapper">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <!-- ############################# Header ############################# -->
+    <header>
+        <!-- main site navigation block -->
+        <nav id="main-menu">
+            <div class="boc-simple-menu">
+                <a class="boc-menu-button boc-hide-tab-up" href="javascript:void(0);" onclick="myFunction()" onfocus="" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+                <a href="index.htm" class="boc-hide-phone"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-phone"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-phone"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-phone"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-phone"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-phone active"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-phone"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="dropdown-nav" class="boc-hide boc-hide-tab-up">
+                <a href="index.htm" class="boc-hide-tab-up"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-tab-up"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-tab-up"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-tab-up"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-tab-up"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-tab-up active"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-tab-up"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+        </nav>
+
+        <div id="hero">
+            <div> <!-- wrapper to overlay the dark filter over the image -->
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <h1>I am Barry O'Connor<span class="p">And this is my Professional Development Journey</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################# CONTENT ############################# -->
+    <main id="main-content">
+
+        <header id="header-explain" class="breadcrumbed">
+            <div id="header-breadcrumb">
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <ul class="boc-grid-container">
+                                <li><a href="index.htm" title="return to the site homepage"><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</a></li>
+                                <li>Events</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-12-col-tab">
+                        <h2>Events</h2>
+                        <p>Nottingham Trent University offers many helpful classes and mentor sessions which run alongside the scheduled lectures. .</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+         <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">LGBT Leaders</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4> Media Gallery</h4>
+                        
+
+                        
+
+                    <div id="image-gallery-lgbt" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/events/face_crowd.jpg" data-size="1000x1000" data-med="images/events/face_crowd_m.jpg" data-med-size="500x500" data-author="Pink News">
+                          <img src="images/events/face_crowd_t.jpg" alt="Me among a crowd of young students watching a presentation at the LGBT Leaders event"/>
+                          <figure>Me among a crowd of young students watching a presentation at the LGBT Leaders event.</figure>
+                        </a>
+
+                        <a href="images/events/jobfair.jpg" data-size="1000x1000" data-med="images/events/jobfair_m.jpg" data-med-size="500x500" data-author="Pink News">
+                          <img src="images/events/jobfair_t.jpg" alt="Students chatting and mingling at the afternoon jobfair at the LGBT Leaders event."/>
+                          <figure>Students chatting and mingling at the afternoon jobfair at the LGBT Leaders event.</figure>
+                        </a>
+
+                        <a href="images/events/jobfair_icecream.jpg" data-size="1000x1000" data-med="images/events/jobfair_icecream_m.jpg" data-med-size="500x500" data-author="Pink News">
+                          <img src="images/events/jobfair_icecream_t.jpg" alt="A group of students eating ice-cream and chatting at the LGBT Leaders event."/>
+                          <figure>A group of students eating ice-cream and chatting at the LGBT Leaders event.</figure>
+                        </a>
+
+                        <a href="images/events/opening_presentation.jpg" data-size="1000x1000" data-med="images/events/opening_presentation_m.jpg" data-med-size="500x500" data-author="Pink News">
+                          <img src="images/events/opening_presentation_t.jpg" alt="A group of seated students watching the opening presentation at the LGBT Leaders event"/>
+                          <figure>A group of seated students watching the opening presentation at the LGBT Leaders event.</figure>
+                        </a>
+
+                        <a href="images/events/pr_media_panel.jpg" data-size="1000x1000" data-med="images/events/pr_media_panel_m.jpg" data-med-size="500x500" data-author="Pink News">
+                          <img src="images/events/pr_media_panel_t.jpg" alt="The PR / Media panel posing for a picture at the LGBT Leaders event."/>
+                          <figure>The PR / Media panel posing for a picture at the LGBT Leaders event.</figure>
+                        </a>
+
+                        <a href="images/events/tech_panel.jpg" data-size="1000x1000" data-med="images/events/tech_panel_m.jpg" data-med-size="500x500" data-author="Pink News">
+                          <img src="images/events/tech_panel_t.jpg" alt="A group of students and myself watching the tech panel at the LGBT Leaders event."/>
+                          <figure>A group of students and myself watching the tech panel at the LGBT Leaders event.</figure>
+                        </a>
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+   
+
+                    <h4>What did I do?</h4>
+                    <p>I attended the LGBT Leaders event in London</p>
+                    <h4>When did this take place?</h4>
+                    <p>The visit was on the 13th of October<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>This was mainly aimed at a younger audience than me but there were some fun, informative industry sessions which turned up a few valuable points. I attended panels on Entrepreneurship, Tech Industry, PR/Media industry, attended the job fair for the sponsor companies and a Q&A regarding application strategies. Some good points were brought up and I feel it has made me think a little differently in terms of what sets people apart when applying.</p>
+                    <p><a href="https://www.facebook.com/LGBTLeaders/" title="visit the LGBT Leaders Facebook page (Opens in a new Window)" target="_blank">LGBT Leaders Facebook page</a></p>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Grit Training Programme</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4> Media Gallery</h4>
+                        
+
+                    <div id="image-gallery-grit" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/events/grid_boards.jpg" data-size="1000x1000" data-med="images/events/grid_boards_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/events/grid_boards_t.jpg" alt="Flipcharts with information from the Grit Training event displayed on them."/>
+                          <figure>Flipcharts with information from the Grit Training event displayed on them.</figure>
+                        </a>
+
+                        <a href="images/events/grit_lunchtime.jpg" data-size="1000x1000" data-med="images/events/grit_lunchtime_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/events/grit_lunchtime.jpg" alt="Flipcharts being set up by one of the Grit presenters who is writing on the board."/>
+                          <figure>Flipcharts being set up by one of the Grit presenters who is writing on the board.</figure>
+                        </a>
+
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+
+
+                    <h4>What did I do?</h4>
+                    <p>I attended the Grit Training day organised by Nottingham Trent University.</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 28th of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>This was a really good event. A lot of what was covered was personal development work I’ve done myself over the last couple of years but there is a 3 day event coming up and I feel like that would be deeper and more of use to me, so I’m going to try and find time to attend.</p>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Global Lounge Diwali Lunch</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+
+                   <h4> Media Gallery</h4>
+                        
+
+                    <div id="image-gallery-diwali" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/events/diwali_welcome.jpg" data-size="1000x1000" data-med="images/events/diwali_welcome_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/events/diwali_welcome_t.jpg" alt="Students listening to the welcome discussion on the meaning of Diwali at the NTU Global Lounge."/>
+                          <figure>Students listening to the welcome discussion on the meaning of Diwali at the NTU Global Lounge.</figure>
+                        </a>
+
+                        <a href="images/events/diwali_meal.jpg" data-size="1000x1000" data-med="images/events/diwali_meal_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/events/diwali_meal_t.jpg" alt="Students being served delicious Indian food at the Diwali celebrations."/>
+                          <figure>Students being served delicious Indian food at the Diwali celebrations.</figure>
+                        </a>
+
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+
+                    <h4>What did I do?</h4>
+                    <p>I attended the Diwali lunch provided by the Global Lounge</p>
+                    <h4>When did this take place?</h4>
+                    <p>I attended on the 6th of November<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>I attended the Diwali celebration lunch with my Indian housemate and his friends who had cooked some of the food. It was good to socialise a little more with them, the food was fantastic and I now actually understand what Diwali is all about.</p>
+                </div>
+            </div>
+        </article>
+
+        
+    </main>
+
+    <!-- ############################# FOOTER ############################# -->
+
+    <!-- about me section -->
+    <section id="boc-about">
+        <header>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-4-col-tab">
+                        <div class="boc-facepic">
+                            <img class="boc-img-circ" src="images/picture-of-my-face_phone.jpg" alt="image showing my face" />
+                        </div>
+                    </div>
+                    <div class="boc-8-col-tab">
+                        <h2>About me</h2>
+                        <p>My name is Barry O'Connor</p>
+                        <p>I'm a web developer, currently studying for a BSc Computer Science degree at Nottingham Trent University.</p>
+                        <p><a href="about.htm" class="boc-faded" title="Find out more about me on my about me page."><span class="arrow-right"></span>Find out more about me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <footer id="sitefooter">
+        <div class="boc-grid-row">
+            <div class="boc-12-col-tab">
+                <p>say hello and start a conversation.</p>
+                    <a href="https://www.facebook.com/barry.oconnor.3572" title="Visit my Facebook page (opens in a new window)" target="_blank"><span class="fab fa-facebook"></span></a><span class="boc-screenreader-only">Visit my facebook page (opens in a new window)</span>
+                    <span class="boc-spacer"></span>
+                    <a href="https://www.linkedin.com/in/barry-o-connor-157a9b174/" title="Visit my LinkedIn page (opens in a new window)" target="_blank"><span class="fab fa-linkedin"></span></a><span class="boc-screenreader-only">Visit my LinkedIn page (opens in a new window)</span>
+            </div>
+        </div>
+        <div>
+            &copy; Barry O'Connor 2018.<a href="help-sitemap.htm" class="right" title="view the help / sitemap page for this site">help / SiteMap</a>
+        </div>
+    </footer>
+</div>
+<!-- 
+End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var menuButton = document.getElementById("dropdown-nav");
+    if (menuButton.className.indexOf("boc-toggle") == -1) {
+        menuButton.className += " boc-toggle";
+    } else { 
+        menuButton.className = menuButton.className.replace(" boc-toggle", "");
+    }
+}   
+</script>
+<script src="js/image-gallery.js"></script>
+
+
+
+
+<!-- ##### Photoswipe CONTENT BEGIN#####-->
+<!-- Core JS file -->
+<script src="js/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="js/photoswipe-ui-default.min.js"></script> 
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader to active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ##### Photoswipe CONTENT END#####-->
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+<!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### PRE-Processing of CSS ###
+CSS on this site was generated from a SASS (ScSS) preprocessor which I can 
+supply if needed. I haven't done so since it's outside the scope of the 
+assignment marking system. I would normally remove unneeded CSS as part of 
+the build process and compress for speed but since this is being marked, I've 
+left it verbose.
+
+### ACKNOWLEDGEMENTS ###
+
+This site uses fontawesome (https://fontawesome.com) for icons
+This Site uses PhotoSwipe (https://photoswipe.com) for the image gallery
+This Site uses The Paypal Accessible Media Player (https://github.com/paypal/accessible-html5-video-player) for accessible video
+
+THe video is keyboard accessible and would have captions but I don't actually know how to make those vtt files.
+     ####################################################################### -->
+
+    <title>Sport :: Continuing Professional Development</title>
+    <meta name="description" content="Sport page for Barry O'Connor's Continuing Professional Development website">
+    <meta name="keywords" content="Sport, NTU Fencing, Continuing Professional Development, Undergraduate, Web Developer, Nottingham Trent University, Year One, Essential Skills assessment">
+    <meta name="author" content="Barry O'Connor">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+    <!-- Core PhotoSwipe CSS file -->
+    <link rel="stylesheet" href="css/photoswipe.css"> 
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+    <!-- Paypal accessible media player -->
+    <link rel="stylesheet" href="css/px-video.css" />
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<div id="bodywrapper">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <!-- ############################# Header ############################# -->
+    <header>
+        <!-- main site navigation block -->
+        <nav id="main-menu">
+            <div class="boc-simple-menu">
+                <a class="boc-menu-button boc-hide-tab-up" href="javascript:void(0);" onclick="myFunction()" onfocus="" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+                <a href="index.htm" class="boc-hide-phone"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-phone"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-phone"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-phone active"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-phone"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-phone"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-phone"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="dropdown-nav" class="boc-hide boc-hide-tab-up">
+                <a href="index.htm" class="boc-hide-tab-up"><span><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</span></a>
+                <a href="volunteering.htm" class="boc-hide-tab-up"><span><span class="fas fa-hand-holding-heart fa-fw" aria-hidden="true"></span>Volunteering</span></a>
+                <a href="societies.htm" class="boc-hide-tab-up"><span><span class="fas fa-code-branch fa-fw" aria-hidden="true"></span>Societies</span></a>
+                <a href="sport.htm" class="boc-hide-tab-up active"><span><span class="fas fa-first-aid fa-fw" aria-hidden="true"></span>Sport</span></a>
+                <a href="academic.htm" class="boc-hide-tab-up"><span><span class="fas fa-graduation-cap fa-fw" aria-hidden="true"></span>Academic</span></a>
+                <a href="events.htm" class="boc-hide-tab-up"><span><span class="fas fa-id-card fa-fw" aria-hidden="true"></span>Events</span></a>
+                <a href="about.htm" class="boc-hide-tab-up"><span><span class="fas fa-user fa-fw" aria-hidden="true"></span>About</span></a>
+            </div>
+        </nav>
+
+        <div id="hero">
+            <div> <!-- wrapper to overlay the dark filter over the image -->
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <h1>I am Barry O'Connor<span class="p">And this is my Professional Development Journey</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################# CONTENT ############################# -->
+    <main id="main-content">
+
+        <header id="header-explain" class="breadcrumbed">
+            <div id="header-breadcrumb">
+                <div class="boc-grid-container">
+                    <div class="boc-grid-row">
+                        <div class="boc-12-col-tab">
+                            <ul class="boc-grid-container">
+                                <li><a href="index.htm" title="return to the site homepage"><span class="fas fa-home fa-fw" aria-hidden="true"></span>Home</a></li>
+                                <li>Sport</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-12-col-tab">
+                        <h2>Sport</h2>
+                        <p>Nottingham Trent University has over 60 sports clubs so there are a large amount of activities and events you can get involved with if you're into sport.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Volunteering Grid -->
+        <article class="boc-grid-container boc-hp-block">
+            <header class="boc-grid-row">
+                <div class="boc-12-col-tab">
+                    <h3 class="h1">Fencing</h3>
+                </div>
+            </header>
+            <div class="boc-grid-row boc-normal sitemap-page">
+                <div class="boc-12-col-tab">
+                    <h4> Media Gallery</h4>
+                        
+                       <div class="px-video-container" id="myvid">
+                          <div class="px-video-img-captions-container">
+                            <div class="px-video-captions hide"></div>
+                            <div class="px-video-wrapper">
+                              <video poster="images/sports/swords_slashing.jpg" class="px-video" controls>
+                                    <!-- video files -->
+                                    <source src="images/sports/fencing.mp4" type="video/mp4" />
+                                    <source src="images/sports/fencing.webm" type="video/webm" />
+
+                                    <!-- text track file -->
+                                    <!--<track kind="captions" label="English captions" src="media/captions_PayPal_Austin_en.vtt" srclang="en" default />-->
+
+                                    <!-- fallback for browsers that don't support the video element -->
+                                    <div>
+                                        <a href="images/sports/fencing.mp4">
+                                            <img src="images/sports/swords_slashing.jpg" width="640" height="360" alt="download video" />
+                                        </a>
+                                    </div>
+                                </video>
+                            </div>
+                          </div>
+                          <!-- end container for captions and video -->
+                          <div class="px-video-controls"></div>
+                        </div>
+                        
+
+                    <div id="image-gallery" class="image-gallery" data-pswp-uid="1">
+                        <a href="images/sports/swords_slashing.jpg" data-size="1000x1000" data-med="images/sports/swords_slashing_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/sports/swords_slashing_t.jpg" alt="Two fencers mid-fight during a fencing match using Sabre weapons."/>
+                          <figure>Two fencers mid-fight during a fencing match using Sabre weapons.</figure>
+                        </a>
+
+                        <a href="images/sports/fencing_helmet.jpg" data-size="1000x1000" data-med="images/sports/fencing_helmet_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/sports/fencing_helmet_t.jpg" alt="A picture of me wearing the full Sabre equipment including the helmet and faceeguard."/>
+                          <figure>A picture of me wearing the full Sabre equipment including the helmet and faceeguard.</figure>
+                        </a>
+
+                        <a href="images/sports/silver_lame.jpg" data-size="1000x1000" data-med="images/sports/silver_lame_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/sports/silver_lame_t.jpg" alt="Me wearing a metallic silver jacket, called a Lame, which is used in competitions."/>
+                          <figure>Me wearing a metallic silver jacket, called a Lame, which is used in competitions.</figure>
+                        </a>
+
+                        <a href="images/sports/water_bottle.jpg" data-size="1000x1000" data-med="images/sports/water_bottle_m.jpg" data-med-size="500x500" data-author="Barry O'Connor">
+                          <img src="images/sports/water_bottle_t.jpg" alt="The fencing equipment gets very hot. Here I am wearing it while getting some more water!"/>
+                          <figure>The fencing equipment gets very hot. Here I am wearing it while getting some more water!</figure>
+                        </a>
+                    </div>
+                    <p class="gallery-text">(Images will open in a fullscreen image gallery)</p>
+   
+
+                    <h4>What did I do?</h4>
+                    <p>I joined the Fencing club at Nottingham Trent University.</p>
+                    <h4>When did this take place?</h4>
+                    <p>I have attended several training nights and participated in several matches with other fencers since joining the club on the 26th October<p>
+                    <h4>What have I gained from this activity?</h4>
+                    <p>This is something I've wanted to do for a while, I considered it when I was at Queen's Belfast and since it's very local in CLifton, I decided to give it a go!</p>
+                    <p>I'm not competitive by nature so mingling with competitive people was strange at first but I dove in and tried to fit in from the start. I was a little late joining so the others are a few weeks worth of training ahead of me and sometimes it shows.</p>
+                    <p>Everyone has been very patient and it's been good socialising with a bunch of people I maybe otherwise wouldn't have. I've also won a couple of matches which was really great and over all it's been a lot of fun.</p>
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+    <!-- ############################# FOOTER ############################# -->
+
+    <!-- about me section -->
+    <section id="boc-about">
+        <header>
+            <div class="boc-grid-container">
+                <div class="boc-grid-row">
+                    <div class="boc-4-col-tab">
+                        <div class="boc-facepic">
+                            <img class="boc-img-circ" src="images/picture-of-my-face_phone.jpg" alt="image showing my face" />
+                        </div>
+                    </div>
+                    <div class="boc-8-col-tab">
+                        <h2>About me</h2>
+                        <p>My name is Barry O'Connor</p>
+                        <p>I'm a web developer, currently studying for a BSc Computer Science degree at Nottingham Trent University.</p>
+                        <p><a href="about.htm" class="boc-faded" title="Find out more about me on my about me page."><span class="arrow-right"></span>Find out more about me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <footer id="sitefooter">
+        <div class="boc-grid-row">
+            <div class="boc-12-col-tab">
+                <p>say hello and start a conversation.</p>
+                    <a href="https://www.facebook.com/barry.oconnor.3572" title="Visit my Facebook page (opens in a new window)" target="_blank"><span class="fab fa-facebook"></span></a><span class="boc-screenreader-only">Visit my facebook page (opens in a new window)</span>
+                    <span class="boc-spacer"></span>
+                    <a href="https://www.linkedin.com/in/barry-o-connor-157a9b174/" title="Visit my LinkedIn page (opens in a new window)" target="_blank"><span class="fab fa-linkedin"></span></a><span class="boc-screenreader-only">Visit my LinkedIn page (opens in a new window)</span>
+            </div>
+        </div>
+        <div>
+            &copy; Barry O'Connor 2018.<a href="help-sitemap.htm" class="right" title="view the help / sitemap page for this site">help / SiteMap</a>
+        </div>
+    </footer>
+</div>
+<!-- 
+End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var menuButton = document.getElementById("dropdown-nav");
+    if (menuButton.className.indexOf("boc-toggle") == -1) {
+        menuButton.className += " boc-toggle";
+    } else { 
+        menuButton.className = menuButton.className.replace(" boc-toggle", "");
+    }
+}   
+</script>
+<script src="js/strings.js"></script>
+<script src="js/px-video.js"></script>
+<script>
+// Initialize
+new InitPxVideo({
+    "videoId": "myvid",
+    "captionsOnDefault": false,
+    "seekInterval": 20,
+    "videoTitle": "clip of a fencing match",
+    "debug": true
+});
+</script>
+
+
+<script src="js/image-gallery.js"></script>
+
+<!-- ##### Photoswipe CONTENT BEGIN#####-->
+<!-- Core JS file -->
+<script src="js/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="js/photoswipe-ui-default.min.js"></script> 
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader to active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ##### Photoswipe CONTENT END#####-->
+</body>
+</html>
